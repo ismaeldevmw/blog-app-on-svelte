@@ -1,3 +1,6 @@
+<script>
+    import Sidebar from './SIdebar.svelte';
+</script>
 <style>
     .Main-container {
         display: grid;
@@ -18,7 +21,7 @@
     <div class="Main-container">
         <div class="Main-content">
             <slot />
-            <div class="Sidebar">Sidebar</div>
+            <Sidebar />
         </div>
     </div>
 </main>
