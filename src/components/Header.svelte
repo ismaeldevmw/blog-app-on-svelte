@@ -1,3 +1,7 @@
+<script>
+    import analyticsTracking from "../utils/analytics";
+</script>
+
 <style>
     .Header {
         background-color: #fcfcfc;
@@ -8,7 +12,7 @@
         display: grid;
         grid-template-columns: minmax(auto, 1024px);
         justify-content: center;
-        align-items:  center;
+        align-items: center;
     }
     .Header-content {
         display: flex;
@@ -44,7 +48,7 @@
         font-size: 14px;
     }
     .Header-social img {
-        width: 20px;        
+        width: 20px;
     }
 </style>
 
@@ -52,21 +56,40 @@
     <div class="Header-container">
         <div class="Header-content">
             <div class="Header-logo">
-                <h1>
-                    Ismael Lopez Caamaño  
-                    <span>Online Instructor</span>
-                </h1>                
+                <h1>Ismael López <span>Online Instructor</span></h1>
             </div>
             <div class="Header-social">
                 <ul>
                     <li>
-                        <a href="/" target="_blank" rel="noreferer"><img src="img/github-icon.png" alt="GitHub logo"></a>
+                        <a
+                            href="https://github.com/ismaeldevmw"
+                            target="_blank"
+                            rel="noreferer"
+                            on:click={analyticsTracking('github')}>
+                            <img src="img/github-icon.png" alt="GitHub logo" />
+                        </a>
                     </li>
                     <li>
-                        <a href="/" target="_blank" rel="noreferer"><img src="img/instagram-icon.png" alt="Instagram logo"></a>
+                        <a
+                            href="/"
+                            target="_blank"
+                            rel="noreferer"
+                            on:click={analyticsTracking('instagram')}>
+                            <img
+                                src="img/instagram-icon.png"
+                                alt="Instagram logo" />
+                        </a>
                     </li>
                     <li>
-                        <a href="/" target="_blank" rel="noreferer"><img src="img/facebook-icon.png" alt="Facebook logo"></a>
+                        <a
+                            href="/"
+                            target="_blank"
+                            rel="noreferer"
+                            on:click={analyticsTracking('facebook')}>
+                            <img
+                                src="img/facebook-icon.png"
+                                alt="Facebook logo" />
+                        </a>
                     </li>
                 </ul>
             </div>

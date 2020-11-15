@@ -1,7 +1,11 @@
 <script>
-    import Sidebar from './SIdebar.svelte';
+    import Sidebar from "./SIdebar.svelte";
 </script>
+
 <style>
+    .Main {
+        min-height: calc(100vh - 203px);
+    }
     .Main-container {
         display: grid;
         grid-template-columns: minmax(auto, 1024px);
@@ -11,7 +15,7 @@
     .Main-content {
         margin: 2em 0 0 0;
         display: grid;
-        grid-template-columns:  3fr 1fr;
+        grid-template-columns: 3fr 1fr;
         grid-gap: 60px;
         justify-content: space-between;
     }

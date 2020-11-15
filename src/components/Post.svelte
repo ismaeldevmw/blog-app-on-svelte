@@ -1,4 +1,7 @@
 <script>
+    import readingTime from "../utils/readingTime";
+    import randomEmoji from "../utils/randomEmoji";
+    import formatIsoTime from "../utils/formatIsoTime";
     export let post;
 </script>
 
@@ -43,17 +46,21 @@
         <div class="Post-head">
             <div class="Post-title">
                 <h2>
-                    <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
+                    <a
+                        rel="prefetch"
+                        href="blog/{post.slug}">{randomEmoji()}{post.title}</a>
                 </h2>
                 <p>
-                    <time datatime={post.createdAt}>{post.createdAt}</time>
+                    <time datatime={post.createdAt}>
+                        {formatIsoTime(post.createdAt)}
+                    </time>
                     <span class="dot">.</span>
-                    <span>5 min.</span>
+                    <span>{readingTime(post.html)}</span>
                 </p>
             </div>
             <div class="Post-tags" />
             <div class="Post-desc">
-                <p>{post.desc}</p>
+                <p>{post.description}</p>
             </div>
         </div>
     </div>

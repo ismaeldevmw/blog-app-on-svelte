@@ -30,7 +30,7 @@
 <footer class="Footer">
     <div class="Footer-container">
         <div class="Footer-content">
-            <div class="Footer-copy">Made with love in Mexico</div>
+            <div class="Footer-copy">Made with love ❤️ in Mexico</div>
             <div class="Footer-info">
                 Proudly powered by Svelte
                 <img src="/img/svelte-icon.png" alt="Svelte logo" />
