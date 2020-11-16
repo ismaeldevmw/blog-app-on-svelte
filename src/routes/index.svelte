@@ -23,7 +23,30 @@
 </style>
 
 <svelte:head>
-    <title>Sapper project template</title>
+    <title>Ismael López</title>
+    <meta name="description" content="Blog de prueba de ismaellopezdev" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ismaellopezdev" />
+    <meta name="twitter:creator" content="@ismaellopezdev" />
+    <meta name="twitter:title" content="Ismael López" />
+    <meta
+        name="twitter:description"
+        content="Blog de prueba de ismaellopezdev" />
+    <meta
+        name="twitter:image"
+        content="https://blog-on-svelte.netlify.app/blogpost-cover.png" />
+
+    <meta name="og:title" content="Ismael López" />
+    <meta name="og:description" content="Blog de prueba de ismaellopezdev" />
+    <meta
+        name="og:image"
+        content="https://blog-on-svelte.netlify.app/blogpost-cover.png" />
+    <meta name="og:url" content="https://blog-on-svelte.netlify.app" />
+    <meta name="og:site_name" content="Ismael López" />
+    <meta name="og:locale" content="es_ES" />
+    <meta name="og:type" content="article" />
+    <meta name="fb:app_id" content="" />
 </svelte:head>
 
 <div class="Home">
